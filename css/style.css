@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+}
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #301934;
+}
+
+h1 {
+  color: #fff;
+}
+
+nav {
+  background-color: #390643;
+  padding: 10px;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#scores-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+
+#liked-score,
+#disliked-score {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: #fff;
+}
+
+#liked-score span,
+#disliked-score span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#liked-score::before,
+#disliked-score::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+#liked-score::before {
+  background-color: #4caf50;
+}
+
+#disliked-score::before {
+  background-color: #f44336;
+}
+
+#waifu-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#waifu-image {
+  position: relative;
+}
+
+#waifu-image img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: #301934;
+  padding: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#waifu-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#waifu-info {
+  margin-top: 20px;
+  background-color: #301934;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#waifu-info h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#buttons-container {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#like-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+#dislike-button {
+  background-color: #f44336;
+  color: white;
+}
